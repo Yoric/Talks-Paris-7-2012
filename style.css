@@ -261,6 +261,8 @@ img.colwidth {
     transition-duration: 3s;
     -moz-transition-property: all;
     -moz-transition-duration: 3s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 3s;
     opacity: 0.9;
 }
 
@@ -283,7 +285,7 @@ div.leftcol {
     position: absolute;
     width:360px;
     top:15%;
-padding: 5%;
+    padding: 5%;
 }
 
 div.rightcol {
@@ -330,6 +332,8 @@ div.present img.thumb {
     opacity: 0;
     -moz-transition-property: all;
     -moz-transition-duration: 1s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
     transition-property: all;
     transition-duration: 1s;
 }
@@ -338,6 +342,8 @@ div.present .appear {
     opacity: 1;
     -moz-transition-property: all;
     -moz-transition-duration: 1s;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
     transition-property: all;
     transition-duration: 1s;
 }
@@ -349,31 +355,6 @@ a {
 div.center {
     text-align: center;
 }
-
-/*
-div.section.present:before {
-    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-    content:"";
-    display:block;
-    position:absolute;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    transition-property: all;
-    transition-duration: 1s;
-    -moz-transition-property: all;
-    -moz-transition-duration: 1s;
-}
-
-div.section:before {
-    background: none;
-    transition-property: all;
-    transition-duration: 1s;
-    -moz-transition-property: all;
-    -moz-transition-duration: 1s;
-}
-*/
 
 #section_mozilla {
     background-image:url(img/svgmoz.png);
@@ -444,11 +425,15 @@ div.present#questions {
 }
 
 div.legend {
-    -moz-transform: scale(0);
     transition-property: all;
     transition-duration: 1s;
+    transform: scale(0);
+    -moz-transform: scale(0);
     -moz-transition-property: all;
     -moz-transition-duration: 1s;
+    -webkit-transform: scale(0);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
     opacity: 0.8;
     background-color: rgba(250, 250, 250, 0.9);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
@@ -456,9 +441,13 @@ div.legend {
 }
 
 div:hover > div.legend {
-    -moz-transform: scale(1);
+    transform: scale(1);
     transition-property: all;
     transition-duration: 1s;
+    -moz-transform: scale(1);
     -moz-transition-property: all;
     -moz-transition-duration: 1s;
+    -webkit-transform: scale(1);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
 }
