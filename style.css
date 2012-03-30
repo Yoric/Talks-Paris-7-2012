@@ -1,0 +1,329 @@
+.fallback-message {
+    display: none;
+}
+
+.impress-not-supported .fallback-message {
+    display: block;
+}
+
+body {
+    min-height: 740px;
+    background-color: lightgray;
+    font-family: helvetica;
+    font-size: 200%;
+}
+
+div.hint {
+    position: absolute;
+    text-align: center;
+    border-radius: 2em;
+    top:70%;
+    width: 100%;
+    opacity: 0;
+    background-color: lightgray;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 1s;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+div.content {
+    padding: 3%;
+    padding-left: 5%;
+}
+
+div.twocolumns {
+    -moz-columns: 400px 2;
+    -moz-column-rule: 1px inset black;
+    -moz-column-gap: 10px;
+}
+
+div.present div.hint {
+    opacity: 0.7;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 1s;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+div.slide {
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+div.header {
+    position: absolute;
+    top: 0px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+div.header.section {
+    margin-left: auto;
+}
+
+div.slide div.title {
+    text-align: left;
+    font-size: 200%;
+    padding-top: 3%;
+    padding-left: 4%;
+    margin-bottom: 3%;
+    border-style: none none solid none;
+    border-color: rgb(250, 250, 250);
+}
+
+div.slide.section div.title {
+    text-align: center;
+    font-size: 200%;
+    margin-top: 35%;
+}
+
+div.author {
+    text-align: center;
+    font-size: 105%;
+}
+
+#navigation {
+    position: fixed;
+    background-color: yellow;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    padding: 10px;
+    min-width:5px;
+    min-height: 200px;
+    left: 0px;
+    top: 30px;
+    z-index: 1;
+    font-size: small;
+    opacity: .3;
+    transition-property: opacity;
+}
+
+#navigation div.content {
+    width:5px;
+    height:200px;
+    opacity: 0;
+    -moz-transition-property: opacity, width, height, clip;
+    -moz-transition-duration: 1s, 1s, 1s, 1s;
+    transition-property: opacity, width, height, clip;
+    transition-duration: 1s, 1s, 1s, 1s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+li {
+    -moz-transition-property: background-color, padding-left, padding-right;
+    -moz-transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, padding-left, padding-right;
+    transition-duration: 1s, 1s, 1s;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    opacity: .8;
+}
+
+li:hover {
+    -moz-transition-property: background-color, padding-left, padding-right;
+    -moz-transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, padding-left, padding-right;
+    transition-duration: 1s, 1s, 1s;
+    background-color: lightgreen;
+}
+
+#navigation div.content li {
+    list-style: none;
+}
+
+#navigation div.content li a {
+    text-decoration: none;
+    padding-left: 0em;
+    padding-right: 0em;
+    -moz-transition-property: background-color, padding-left, padding-right;
+    -moz-transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, padding-left, padding-right;
+    transition-duration: 1s, 1s, 1s;
+}
+
+#navigation div.content li a:hover {
+    background-color: lightgreen;
+    padding-left: 1em;
+    padding-right: 1em;
+    -moz-transition-property: background-color, padding-left, padding-right;
+    -moz-transition-duration: 1s, 1s, 1s;
+    transition-property: background-color, padding-left, padding-right;
+    transition-duration: 1s, 1s, 1s;
+}
+
+#navigation:hover {
+    left: 0px;
+    top: 30px;
+    opacity: 1;
+    transition-property: opacity;
+}
+
+#navigation:hover div.content {
+    width: 300px;
+    opacity: 1;
+    -moz-transition-property: opacity, width, height, clip;
+    -moz-transition-duration: 1s, 1s, 1s, 1s;
+    transition-property: opacity, width, height, clip;
+    transition-duration: 1s, 1s, 1s, 1s;
+}
+
+#navigation:hover div.content li[level="0"]{
+
+}
+
+#navigation:hover div.content li[level="1"]{
+    margin-left: 1em;
+}
+
+#navigation:hover div.content li[level="2"]{
+    margin-left: 2em;
+}
+
+ul.cloud {
+    list-style: none;
+    text-align:right;
+}
+
+ul.cloud a {
+    text-decoration: none;
+}
+
+ul.cloud img {
+    padding-right: 10px;
+}
+
+ul.cloud li {
+    opacity: 0.5
+    text-align: center;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(0.5);
+    -moz-transform: scale(0.5);
+}
+
+
+ul.cloud li:hover {
+    opacity: 1;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(2);
+    -moz-transform: scale(2);
+    background-color: rgba(250, 250, 250, 0.9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+
+img.fullwidth {
+    width: 780px;
+    position: absolute;
+    clip: rect(0px, 900px, 550px, 0px);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img.fullheight {
+    height:550px;
+    width: auto;
+    display: block;
+}
+
+img.colwidth {
+    width: 340px;
+    position: absolute;
+    clip: rect(0px, 900px, 550px, 0px);
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index:1;
+    transition-property: all;
+    transition-duration: 3s;
+    -moz-transition-property: all;
+    -moz-transition-duration: 3s;
+    opacity: 0.9;
+}
+
+img.colwidth:hover {
+    width:700px;
+    height:auto;
+}
+
+#plan li {
+    font-size: 120%;
+    padding-top: 5px;
+}
+
+#logo_mozilla {
+    margin-top: 30%;
+    margin-left: 8%;
+}
+
+div.leftcol {
+    position: absolute;
+    width:360px;
+    top:15%;
+padding: 5%;
+}
+
+div.rightcol {
+    position: absolute;
+    left: 400px;
+    padding: 5%;
+    top: 15%;
+}
+
+img.thumb {
+    width:.5em;
+    height:.5em;
+    size: contain;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 3s;
+    -moz-transition-property: all;
+    -moz-transition-duration: 3s;
+}
+
+
+div.present img.thumb {
+    opacity: 1;
+}
+
+
+.hidden {
+    opacity: 0;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.hidden .appear {
+    opacity: 1;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.appear {
+    opacity: 0;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+div.present .appear {
+    opacity: 1;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    transition-property: all;
+    transition-duration: 1s;
+}
