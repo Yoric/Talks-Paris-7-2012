@@ -7,7 +7,7 @@
      }
    }
    function revealSlide() {
-     var selector = this.querySelectorAll('.hidden')l
+     var selector = this.querySelectorAll('.hidden');
      for (var i = 0; i < selector.length; ++i) {
        selector[0].classList.add('appear');
      }

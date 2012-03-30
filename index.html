@@ -24,6 +24,8 @@
   <!-- Title -->
  <div id="title" class="step slide section" data-x="0" title="Web,
   champ de bataille" level="0">
+   <a href="https://github.com/Yoric/Talks-Paris-7-2012"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/ce742187c818c67d98af16f96ed21c00160c234a/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+   
     <div class="title">
       Web, champ de bataille
    </div>
@@ -61,7 +63,10 @@
 
     <!-- Introduction -->
    <div class="step slide section" data-x="0000" data-y="1000"
-     title="Avant de commencer" level="2">
+     title="Avant de commencer" level="2"
+     style="background-image:url(img/641px-Mozilla_Mascot.svg.png);
+     background-size:cover;
+     repeat: none">
      <img id="logo_mozilla" src="img/mozilla.png" class="fullwidth">
    </div>
 
@@ -72,14 +77,16 @@
       </div>
       <div class="content">
         <ul>
-          <li>Mozilla Fondation (association &agrave; but non-lucratif)</li>
-          <li>Mozilla Corporation (entreprise &agrave; but
+          <li><a href="http://getfirefox.com">Firefox</a>, <a
+      href="http://getthunderbird.com">Thunderbird</a>, <a
+      href="http://getinstantbird.com">InstantBird</a>, Lightning,
+      BrowserID/Persona, SpiderMonkey, Boot-to-Gecko, Rust, ...</li>
+          <li><a href="http://mozilla.org">Mozilla Fondation</a> (association &agrave; but non-lucratif)</li>
+          <li><a href="http://mozilla.com">Mozilla Corporation</a> (entreprise &agrave; but
           non-lucratif &mdash; environ 600 employ&eacute;s)</li>
-          <li>Mozilla Community (des milliers de volontaires &agrave;
+          <li><a href="http://mozillians.org">Mozilla Community</a> (des milliers de volontaires &agrave;
           travers le monde)</li>
-          <li>Firefox, Thunderbird, InstantBird, Lightning, BrowserID/Persona,
-          SpiderMonkey, Boot-to-Gecko, Rust, ...</li>
-        </ul>
+       </ul>
      </div>
     </div>
 
@@ -91,11 +98,11 @@
       </div>
       <div class="content">
         <ul>
-         <li>Internet est une ressource publique mondiale qui doit
-          demeurer ouverte et accessible.</li>
-          <li>Chacun doit avoir la possibilité de façonner son
-          utilisation d'Internet.</li>
-          <li>Des processus transparents et communautaires favorisent la participation, la responsabilité et la confiance.</li>
+         <li>«&nbsp;Internet est une ressource publique mondiale qui doit
+          demeurer ouverte et accessible.&nbsp;»</li>
+          <li>«&nbsp;Chacun doit avoir la possibilité de façonner son
+          utilisation d'Internet.&nbsp;»</li>
+          <li>«&nbsp;Des processus transparents et communautaires favorisent la participation, la responsabilité et la confiance.&nbsp;»</li>
        </ul>
 
        <a href="http://www.mozilla.org/about/manifesto.fr.html">http://www.mozilla.org/about/manifesto.fr.html</a>
@@ -149,7 +156,7 @@
      <div class="title">
        ... sans restrictions
      </div>
-      <img src="img/Lenna.png" class="fullwidth"/>
+      <img src="img/Lenna.png" class="fullheight"/>
      </div>
 
     <div class="step slide" data-x="+8000" data-y="2000" level="2" title="Le monde reel">
@@ -368,7 +375,7 @@
     </div>
     </div>
 
-    <div class="step slide" data-x="8000" data-y="3000" title="Browser
+    <div class="step slide" data-x="9000" data-y="3000" title="Browser
       wars 2.0"
       style="background-image:url(img/firefoxFox.jpg);
         background-size:cover;
@@ -401,7 +408,7 @@
   </div>
 
 
-    <div class="step slide" data-x="9000" data-y="3000" title="De nos jours">
+    <div class="step slide" data-x="10000" data-y="3000" title="De nos jours">
       <div class="title">
         Aujourd'hui
       </div>
@@ -680,37 +687,98 @@
       <div class="title">
         Le combat pour la vie priv&eacute;e
       </div>
-      Do Not Track
-      Collusion
-      BrowserID
+      <div class="content">
+        <div>
+        <strong>Objectifs</strong> informer les utilisateurs, offrir des alternatives
+    respectueuses et simples.
+          </div>
+          <div style="padding-top:5%">
+        <strong>Nos solutions technologiques</strong>
+        <ul>
+         <li>Collusion</li>
+          <li>BrowserID</li>
+          <li>Do Not Track</li>
+        </ul>
+        </div>
     </div>
+   </div>
 
     <div class="step slide" data-x="2000" data-y="5000" title="Les
-      silos technologiques">
+      silos technologiques"
+      onclick="this.querySelectorAll('.hidden')[0].classList.add('appear')"
+      >
       <div class="title">
         Le combat contre les silos technologiques
       </div>
-      Open Web Apps
-      WebAPI, DeviceAPI      
+      <div class="content">
+        <div>
+        <strong>Objectifs</strong> Offrir aux d&eacute;veloppeurs tous
+      les outils pour &eacute;chapper aux silos.
+          </div>
+          <div style="padding-top:5%">
+        <strong>Nos solutions technologiques</strong>
+        <ul>
+          <li>Open Web Apps</li>
+          <li>WebAPI</li>
+          <li>DeviceAPI</li>
+          <li>WebGL</li>
+          <li>Canvas</li>
+       </ul>
+       <div class="hidden">
+         <strong>Pub</strong> Avez-vous jou&eacute; &agrave; <a href="http://browserquest.mozilla.org/">BrowserQuest</a> ?
+       </div>
+        </div>
     </div>
+  </div>
 
    <div class="step slide" data-x="3000" data-y="5000" title="Boot to
     Gecko">
+        <a href="https://github.com/andreasgal/B2G"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/ce742187c818c67d98af16f96ed21c00160c234a/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+
      <div class="title">
        Boot to Gecko
      </div>
-     TODO
-    </div>
+     <div class="content">
+       <div class="leftcol">
+                     <img src="img/hero.png" class="colwidth" style="margin-top:5%"/>
 
-    <div class="step slide" data-x="4000" data-y="5000" title="Autres
-    initiatives">
+       </div>
+       <div class="rightcol">
+         <ul>
+            <li>technologie puissante <img src="img/good.svg" class="thumb"/></li>
+            <li>acc&egrave;s ouvert <img src="img/good.svg"
+            class="thumb"/></li>
+            <li>protocoles ouverts <img src="img/good.svg"
+       class="thumb"/></li>
+            <li>vie priv&eacute;e <img src="img/good.svg"
+       class="thumb"/></li>
+            <li>transparence totale <img src="img/good.svg"
+       class="thumb"/></li>
+            <li>aucune captivit&eacute; <img src="img/good.svg"
+       class="thumb"/></li>
+     </ul>
+       </div>
+    </div>
+   </div>
+
+
+    <!-- Section 5: Conclusions -->
+
+    <div class="step slide section" data-x="0" data-y="6000"
+      title="Conclusions" level="1">
       <div class="title">
-        Autres initiatives
+        Conclusions
       </div>
-      TODO: Spark
     </div>
 
-    <div class="step slide" data-x="5000" data-y="5000" title="Vous
+    <div class="step slide" data-x="1000" data-y="6000" level="2"
+      title="La necessite d'un web ouvert">
+    <div class="title">
+      Sans ouverture pas d'innovation
+    </div>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="6000" title="Vous
   pouvez nous aider !">
       <div class="title">
         Vous pouvez nous aider !
@@ -757,30 +825,9 @@
       </div>
   </div>
 
-    <!-- Section 5: Conclusions -->
+   <div class="step slide invisible" data-x="0" data-y="0" title="Des
+    questions?" data-scale="4" style="z-index:-1">
 
-    <div class="step slide section" data-x="0" data-y="6000"
-      title="Conclusions" level="1">
-      <div class="title">
-        Conclusions
-      </div>
-    </div>
-
-    <div class="step slide" data-x="1000" data-y="6000" level="2"
-      title="La necessite d'un web ouvert">
-    <div class="title">
-      La n&eacute;cessit&eacute; d'un web ouvert
-    </div>
-    </div>
-
-    <div class="step slide" data-x="2000" data-y="6000"
-      title="Enrolez-vous, renrolez-vous !">
-      <div class="title">
-        Il ne tient qu'&agrave; nous de l'obtenir !
-      </div>
-      <div class="content">
-        <a href="http://www.mozilla.org/contribute/areas.html">http://www.mozilla.org/contribute/areas.html</a>
-      </div>
     </div>
     </div>
     </div>
