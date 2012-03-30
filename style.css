@@ -30,6 +30,7 @@ div.hint {
 div.content {
     padding: 3%;
     padding-left: 5%;
+    z-index:1;
 }
 
 div.twocolumns {
@@ -57,6 +58,7 @@ div.slide.invisible {
     opacity: 0;
     background-color: none;
     box-shadow: none;
+    z-index: -1;
 }
 
 div.header {
@@ -78,12 +80,15 @@ div.slide div.title {
     margin-bottom: 3%;
     border-style: none none solid none;
     border-color: rgb(250, 250, 250);
+    z-index: 1;
 }
 
 div.slide.section div.title {
     text-align: center;
-    font-size: 200%;
+    font-weight: bold;
+    font-size: 300%;
     margin-top: 35%;
+    border-style: none;
 }
 
 div.author {
@@ -340,3 +345,93 @@ div.present .appear {
 a {
     text-decoration: none;
 }
+
+div.center {
+    text-align: center;
+}
+
+/*
+div.section.present:before {
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    transition-property: all;
+    transition-duration: 1s;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+}
+
+div.section:before {
+    background: none;
+    transition-property: all;
+    transition-duration: 1s;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+}
+*/
+
+#section_mozilla {
+    background-image:url(img/svgmoz.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_mozilla {
+    background-image:url(img/svgmoz_pale.png);
+}
+
+#section_web {
+    background-image:url(img/provider_internetsvg.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_web {
+    background-image:url(img/provider_internetsvg_pale.png);
+}
+
+#section_history {
+    background-image:url(img/chevaliers.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_history {
+    background-image:url(img/chevaliers_pale.png);
+}
+
+#section_silos {
+    background-image:url(img/jeu_de_paume.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_silos {
+    background-image:url(img/jeu_de_paume_pale.png);
+}
+
+#section_fight {
+    background-image:url(img/liberty.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_fight {
+    background-image:url(img/liberty_pale.png);
+}
+
+#section_conclusions {
+    background-image:url(img/promo-contribute.png);
+    background-size:cover;
+    repeat: none;
+}
+
+div.present#section_conclusions {
+    background-image:url(img/promo-contribute_pale.png);
+}
+
