@@ -30,20 +30,22 @@
         data-y="0"
         data-scale="0.2"
         style="z-index:2"
-      title="Web, champ de bataille" level="0">
+      title="Web ouvert, guerre ouverte" level="0">
         <a href="https://github.com/Yoric/Talks-Paris-7-2012">
           <img style="position: absolute; top: 0; left: 0; border: 0;"
           src="https://a248.e.akamai.net/assets.github.com/img/ce742187c818c67d98af16f96ed21c00160c234a/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67"
           alt="Fork me on GitHub" />
         </a>
-        <div class="title">World War Web</div>
+        <div class="title">Web ouvert, guerre ouverte</div>
         <div class="author">David Rajchenbach-Teller, Mozilla</div>
-        <div class="hint"></div>
-        <script>var hint = " 
-        <p>Use the spacebar or arrow keys to navigate</p>"; if
-        ("ontouchstart" in document.documentElement) { hint = " 
-        <p>Tap on the left or right to navigate</p>"; }
-        document.querySelector(".hint").innerHTML = hint;</script>
+        <div class="hint">Use the spacebar or arrow keys to navigate</div>
+        <script>
+        if ("ontouchstart" in document.documentElement) {       
+           document.querySelector(".hint").innerHTML = "Tap on the left or right to navigate";
+        }
+        window.setTimeout(function()
+        {document.querySelector(".hint").style.opacity = 0;}, 3000);
+        </script>
       </div>
       <!-- Plan -->
       <div id="plan" class="step slide" data-x="1000" data-y="0"
@@ -144,6 +146,19 @@
         data-scale="0.002" level="2" title="Le monde réel">
         <div class="title">... sans oublier le monde réel !</div>
         <img src="img/revolutions.png" class="fullwidth" />
+      </div>
+      <div class="step slide" data-x="811" data-y="68"
+        data-scale="0.002" level="2" title="Et demain ?">
+        <div class="title">Et demain ?</div>
+        <div class="content" style="text-align:center">
+          <div style="padding-top:20%">
+          L'humanit&eacute; a encore "quelques" probl&egrave;mes
+            &agrave; r&eacute;soudre.
+          </div>
+          <div>
+            La solution viendra peut-&ecirc;tre par le web.
+          </div>
+        </div>
       </div>
       <div class="step slide invisible" data-x="1000" data-y="0"
       title="Plan"></div>
@@ -745,10 +760,13 @@
         <div class="title">Le web ouvert, c'est...</div>
         <div class="content">
           <ul>
-          <li>L'innovation par tous.</li>
-          <li>Github, Wikipedia, et les autres.</li>
-          <li>Wikileaks, l'affaire Bettencourt et le printemps arabe.</li>
-          <li>La responsabilit&eacute; de tous !</li>
+            <li>Une ressource publique et partag&eacute;e.</li>
+            <li>L'innovation par tous.</li>
+            <li>Github, Wikipedia, et les autres.</li>
+            <li>Wikileaks, l'affaire Bettencourt et le printemps
+            arabe.</li>
+            <li>... le pouvoir de sauver le monde, ou presque :)</li>
+            <li>La responsabilit&eacute; de tous !</li>
           </ul>
         </div>
       </div>
@@ -760,7 +778,8 @@
         <div class="content"
           style="background:url(img/sd.png) no-repeat center center;
           height:600px">
-
+<!-- Cette image provient de SuperDupont :
+        http://www.bdnet.com/catalogue_detailbd_SuperDupont-T4-Oui-Nide-Iou-nouvelle-edition-4--9782858158423 -->
           <div style="position:absolute;left:48%;top:20%">
             <img src="img/creativecollective.png" />
             <div class="legend">
