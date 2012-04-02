@@ -273,10 +273,6 @@ img.colwidth {
     opacity: 0.9;
 }
 
-img.colwidth:hover {
-    width:700px;
-    height:auto;
-}
 
 #plan li {
     font-size: 120%;
